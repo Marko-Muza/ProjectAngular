@@ -1,2 +1,2 @@
 # ProjectAngular
-Just for practicing, and maybe chanche for job.
+Just for practicing, and maybe chance for job.
