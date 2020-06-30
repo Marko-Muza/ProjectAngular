@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PostsComponent } from './posts/posts.component';
 import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PostService } from './Services/post.service';
 
 @NgModule({
   declarations: [
@@ -15,14 +16,16 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     PostsComponent
-  ],
+  ], 
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
