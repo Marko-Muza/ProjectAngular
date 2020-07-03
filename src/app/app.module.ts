@@ -10,6 +10,8 @@ import { HttpModule } from '@angular/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PostService } from './Services/post.service';
 import { AppErrorHandler } from './common/app-error-handler';
+import { UsersComponent } from './users/users.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { AppErrorHandler } from './common/app-error-handler';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PostsComponent
+    PostsComponent,
+    UsersComponent,
+    NotfoundComponent
   ], 
   imports: [
     BrowserModule,

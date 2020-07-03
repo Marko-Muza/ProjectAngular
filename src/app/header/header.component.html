@@ -1,6 +1,25 @@
-<a style="float: left;" href="home">
+<!--<a style="float: left;" href="home">
     <h2 style="color:rgb(82, 82, 235);">INNOVIC</h2>
 </a>
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">INNOVIC</span>
+    <a class="nav-item nav-link" href="#">Users</a>
+    <a class="nav-item nav-link" href="#">Posts</a>
+    <a class="nav-item nav-link" href="#">Registration</a>
+    <a class="nav-item nav-link" href="#">Sign</a>
+</nav>-->
 
 
-  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">INNOVIC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" [routerLink]="['/users']">Users</a>
+        <a class="nav-item nav-link" routerLink="/posts">Posts</a>
+      </div>
+    </div>
+  </nav>
