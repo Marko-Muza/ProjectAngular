@@ -5,13 +5,13 @@
 <ul class="list-group">
     <li 
        *ngFor="let post of posts" 
-       class="list-group-item">
+       class="list-group-item flex-colum">
        
 
        <button style="margin-left: 5px; background-color:  rgb(113, 199, 202);"
-          (click)="updatePost(post)"
-          class="btn-default">Update</button>
-        
+          (click)="postDetails(post)"
+          class="btn-default">Details</button>
+         
        <button style="margin-left: 5px; background-color: rgb(241, 161, 177);"
           (click)="deletePost(post)"
           class="btn-default">Delete</button>

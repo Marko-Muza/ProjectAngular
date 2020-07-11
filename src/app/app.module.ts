@@ -12,6 +12,8 @@ import { PostService } from './Services/post.service';
 import { AppErrorHandler } from './common/app-error-handler';
 import { UsersComponent } from './users/users.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { CommentsComponent } from './comments/comments.component';
+import { PostDetailsComponent } from './post-details/post-details.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FooterComponent,
     PostsComponent,
     UsersComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    CommentsComponent,
+    PostDetailsComponent
   ], 
   imports: [
     BrowserModule,

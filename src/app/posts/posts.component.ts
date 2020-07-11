@@ -45,7 +45,6 @@ export class PostsComponent implements OnInit {
 
   updatePost(post){
     this.service.update(post)
-    //this.http.put(this.url,JSON.stringify(post))
         .subscribe(
           updatedPost => {
             console.log(updatedPost);
@@ -65,6 +64,10 @@ export class PostsComponent implements OnInit {
               alert('This post has already been deleted.');
             else throw error;
           });
+  }
+
+  postDetails(post){
+    console.log('Post details!');
   }
 
 }

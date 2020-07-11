@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-users',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-  constructor() { }
+  users: any[];
+
+  constructor(http: Http) {
+    http.get('https://jsonplaceholder.typicode.com/users')
+        .subscribe(response => {
+          this.users = response.json();
+        })
+   }
 
   ngOnInit() {
   }
